@@ -5,7 +5,7 @@ searchBtn.addEventListener("click", async function () {
   const search = document.querySelector(".input-keyword").value;
   const result = await getResult(search);
   const musics = result.results;
-  // console.log(musics);
+  console.log(musics);
   updateResult(result.resultCount);
   updateUI(musics);
 });
